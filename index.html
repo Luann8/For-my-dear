@@ -6,7 +6,9 @@
 <style>
     body {
         background-image: url(https://th.bing.com/th/id/R.0a16a5d869b010a7b6302d0c04eb36ed?rik=CK3N7EO0P8XiDQ&riu=http%3a%2f%2fwww.v3wall.com%2fwallpaper%2f1680_1050%2f0911%2f1680_1050_20091115123532543837.jpg&ehk=bRg%2fKBdwgPVgefDMrc1lhbHfGQ5CIPDnN%2fBQGOTd51w%3d&risl=&pid=ImgRaw&r=0);
+        background-size: cover; /* Choose your desired size: cover, contain, auto, etc. */
     }
+    
 
     p {
         text-align: center;
@@ -36,16 +38,38 @@
         top: 68%;
         color: red;
     }
-</style>
+    div {
+        margin: 20px;
+        padding: 15px;
+        background-color: #f0f0f088;
+        border: 1px solid #ccccccb2;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+        /* Style for the buttons inside the div */
+        button {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #555;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Add some hover effect to the buttons */
+        button:hover {
+            background-color: rgb(31, 201, 45);
+        }
+
+    </style>
 </head>
 
 <body>
+    <div>
     <p>Can we hang out soon?</p>
     <img src="https://media.tenor.co/images/e6c71a6b1a53aafa0b94b28dec7be1b4/raw">
-
     <button id="botao1">YES BBY!</button>
     <button id="botao2">NO</button>
-
     <script>
         const button2 = document.getElementById('botao2');
         let left = 40;
@@ -58,12 +82,14 @@
             this.style.left = left + '%';
         });
     </script>
+    
 
     <script>
         document.getElementById('botao1').addEventListener('click', function () {
             alert('Thank you in very much! ❤️');
         });
     </script>
+</div>
 </body>
 
 </html>
